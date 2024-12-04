@@ -12,17 +12,14 @@
     <style>
         nav {
             background-color:white; 
-            
-            /* list-style-type:; */
+            height: 100px;
             text-align: center;
             margin: 0;
             padding: 20px;
-            /* color: blank;
-            text-shadow: 2px 2px 4px #000000; */
             width: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-    }
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+        }
 
     .home{
       margin-top: 50px;
@@ -31,11 +28,11 @@
         color: rgb(103, 98, 98);
         
     }
-    /*  .dropdown-menu{
-        background-color: rgb(34, 33, 33);
-         text-decoration: whitesmoke; 
+     #mynavbar{
+        background-color: white;
+        color: black; 
         
-    } */
+    }
     a:link {
         color: text-black-50;
     }
@@ -68,6 +65,71 @@
   height: 200px;
   margin: 10px;
 }
+
+/* ################# product-card ##################### */
+.product-card {
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Ensures images don't overflow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 400px;
+    width: 300px;
+    margin: 10px;
+  }
+
+  .product-card:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  }
+
+  .card-img-top{
+    height: 200px;
+  }
+
+  .card-body {
+    padding: 1.5rem; /* Add padding inside the card */
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+    height: 80px;
+  }
+
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .btn-block {
+    width: 100%;
+  }
+
+  /* ################ home2 ################# */
+
+  #home2{
+    height: 500px;
+    width: 100%;
+  }
+
+
+
+  /* ############ card ########### */
+
+  .card-img-btm{
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+  }
+
+/* ################# footer ################# */
+
 .footer-container {
         background-color: #ffffff; /* White background */
         color: #343a40; /* Dark text color for better contrast */
@@ -137,8 +199,31 @@
     max-height: 400px;
     margin-top: 100px;
   }
+  /* .gallery img{
+    height: 50px;
+    width: 60px;
+  } */
 
+  .product-card {
+      margin-bottom: 20px; 
+      margin-left: 15%;
+    }
+
+    #home2{
+      height: 200px;
+    }
 }   
+
+@media only screen and (max-width: 992px) {
+
+    #home2{
+      height: 400px;
+    }
+    .product-card {
+      margin-bottom: 20px; 
+      margin-left: 15%;
+    }
+}
 
     </style>
 </head>
@@ -290,91 +375,170 @@
 
 <div><img src="haier-4k-led-smart-tv-43-inch-black-min.webp" width="100%" height="100%"></div>
     
-<div><h3>Our New Favorite</h3></div>
+<div><h3 class="text-center my-5">Our New Favorites</h3></div>
 
-<div class="row g-0">
-  <div class="col-lg-2 col-md-0"></div>
-  <div class="col-md-12 col-lg-4 product-column">
-<div class="card" style="width:50%;height:50%">
-  <img class="card-img-top" src="croma16wbtspeakercremp1102sbtspblack_base.avif" alt="Card image" style="width:100%;height: 400px;" >
-  <div class="card-body">
-    <p class="card-text">Speaker New Model
-    </p>
-    <!-- <a href="#" class="btn btn-primary">Add To Cart</a> -->
-  </div>
-</div>
-</div>
-
-
-  <div class="col-md-12 col-lg-4 product-column">
-  <div class="card" style="width:50%;height:50%">
-    <img class="card-img-top" src="227708_0_pwxenw.webp" alt="Card image" style="width:100%;height: 400px;">
-    <div class="card-body">
-      <p class="card-text">Butterfly New Stove
-      </p>
-      <!-- <a href="#" class="btn btn-primary">Add To Cart</a> -->
+<div class="row g-4 justify-content-center">
+  <!-- Product Card 1 -->
+  <div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="card product-card shadow-lg">
+      <img class="card-img-top" src="TV.jpg" alt="Card image">
+      <div class="card-body">
+        <h5 class="card-title">TV New Model</h5>
+        <p class="card-text">Experience stunning visuals with our latest smart TV. Perfect for movies, sports, and gaming.</p>
+        <a href="#" class="btn btn-primary btn-block">Add To Cart</a>
+      </div>
     </div>
   </div>
+
+<!-- Product Card 2 -->
+  <div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="card product-card shadow-lg">
+      <img class="card-img-top" src="ac org.avif" alt="Card image">
+      <div class="card-body">
+        <h5 class="card-title">AC New Model</h5>
+        <p class="card-text">Stay cool all summer with this energy-efficient air conditioner. Designed for ultimate comfort.</p>
+        <a href="#" class="btn btn-primary btn-block">Add To Cart</a>
+      </div>
+    </div>
   </div>
-  <div class="col-md-0 col-lg-2">   
+
+
+  <!-- Product Card 3 -->
+  <div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="card product-card shadow-lg">
+      <img class="card-img-top" src="croma16wbtspeakercremp1102sbtspblack_base.avif" alt="Card image">
+      <div class="card-body">
+        <h5 class="card-title">Speaker New Model</h5>
+        <p class="card-text">Enjoy the latest sound experience with this new speaker model. Perfect for your home or outdoor use!</p>
+        <a href="#" class="btn btn-primary btn-block">Add To Cart</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Card 4 -->
+  <div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="card product-card shadow-lg">
+      <img class="card-img-top" src="227708_0_pwxenw.webp" alt="Card image">
+      <div class="card-body">
+        <h5 class="card-title">Butterfly New Stove</h5>
+        <p class="card-text">A modern, efficient stove for your kitchen. Stylish and easy to use!</p>
+        <a href="#" class="btn btn-primary btn-block">Add To Cart</a>
+      </div>
+    </div>
   </div>
 </div>
- 
 
-      <div><img src="Zip-Care_ny0dbz.webp" width="100%" height="100%"></div>
+      <div class="home" ><img id="home2" src="Zip-Care_ny0dbz.webp" ></div>
 
-      <div class="main_gallery m-5">
-        <div class="gallery">
-      <a target="_blank" href="251618_co4lxf.webp">
-        <img src="251618_co4lxf.webp" class="rounded-circle" alt="Cinque Terre" width="236" height="236">
-      </a>
-      <div class="desc">Lexurius Apple</div>
+      <div class="container my-5">
+        <!-- Featured Products Section -->
+        <div class="text-center mb-4">
+          <h2>Our Featured Products</h2>
         </div>
-        <div class="gallery">
-          <a target="_blank" href="croma-32-inch-hd-led-smart-tv.jpg">
-            <img src="croma-32-inch-hd-led-smart-tv.jpg" class="rounded-circle" alt="Cinque Terre" width="230" height="236">
-          </a>
-          <div class="desc">Refrigerator</div>
-            </div> 
-             <div class="gallery">
-              <a target="_blank" href="264337_pu98ds.png">
-                <img src="264337_pu98ds.png" class="rounded-circle" alt="Cinque Terre" width="236" height="236">
+        <div class="row">
+          <!-- Gallery Item 1 -->
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="card shadow-sm border-0">
+              <a target="_blank" href="HP_DOTD_Ref_4Dec2024_clcklz.webp">
+                <img src="HP_DOTD_Ref_4Dec2024_clcklz.webp" class="card-img-btm " alt="Luxurious Apple" >
               </a>
-              <div class="desc">Laptop</div>
-                </div>
-                </div>
-                
-<div><h2>What's Hot</h2></div>
-
-   
-<div class="main_gallery m-5">
-    <div class="gallery">
-  <a target="_blank" href="71zmAid9qYL._AC_UF1000,1000_QL80_.jpg">
-    <img src="71zmAid9qYL._AC_UF1000,1000_QL80_.jpg" class="square" alt="Cinque Terre" width="236" height="210">
-  </a>
-  <div class="desc">Ac</div>
-    </div>
-    <div class="gallery">
-      <a target="_blank" href="251618_co4lxf.webp">
-        <img src="251618_co4lxf.webp" class="square" alt="Cinque Terre" width="230" height="210">
-      </a>
-      <div class="desc">Appliances</div>
-        </div> 
-         <div class="gallery">
-          <a target="_blank" href="300652_0_ncocr2.webp">
-            <img src="300652_0_ncocr2.webp" class="square" alt="Cinque Terre" width="236" height="210">
-          </a>
-          <div class="desc">Tablet</div>
+              <!-- <div class="card-body text-center">
+                <p class="card-title fw-bold">Luxurious Apple</p>
+              </div> -->
             </div>
-<div class="gallery">
-  <a target="_blank" href="croma-32-inch-hd-led-smart-tv.jpg">
-    <img src="croma-32-inch-hd-led-smart-tv.jpg" class="square" alt="Cinque Terre" width="236" height="210">
-  </a>
-  <div class="desc">Electronics</div>
-</div>
-</div>
+          </div>
+          <!-- Gallery Item 2 -->
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="card shadow-sm border-0">
+              <a target="_blank" href="HP_DOTD_SW_4Dec2024_h9ucm9.webp">
+                <img src="HP_DOTD_SW_4Dec2024_h9ucm9.webp" class="card-img-btm " alt="Refrigerator" >
+              </a>
+              <!-- <div class="card-body text-center">
+                <p class="card-title fw-bold">Refrigerator</p>
+              </div> -->
+            </div>
+          </div>
+          <!-- Gallery Item 3 -->
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="card shadow-sm border-0">
+              <a target="_blank" href="HP_DOTD_WM_4Dec2024_kbmolb.webp">
+                <img src="HP_DOTD_WM_4Dec2024_kbmolb.webp" class="card-img-btm " alt="Laptop" >
+              </a>
+              <!-- <div class="card-body text-center">
+                <p class="card-title fw-bold">Laptop</p>
+              </div> -->
+            </div>
+          </div>
+          <!-- Gallery Item 4 -->
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="card shadow-sm border-0">
+              <a target="_blank" href="HP_DOTD_Tab_4Dec2024_y6fazn.webp">
+                <img src="HP_DOTD_Tab_4Dec2024_y6fazn.webp" class="card-img-btm " alt="AC" >
+              </a>
+              <!-- <div class="card-body text-center">
+                <p class="card-title fw-bold">AC</p>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      
+        <!-- What's Hot Section -->
+        <div class="text-center mb-4">
+          <h2>What's Hot</h2>
+        </div>
+        <div class="row">
+          <!-- Gallery Item 1 -->
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="card shadow-sm border-0">
+              <a target="_blank" href="251618_co4lxf.webp">
+                <img src="HP_New-at-Croma_AC_4Dec2024_s5z5tm.webp" class="card-img-btm " alt="Appliances" >
+              </a>
+              <!-- <div class="card-body text-center">
+                <p class="card-title fw-bold">Appliances</p>
+              </div> -->
+            </div>
+          </div>
+          <!-- Gallery Item 2 -->
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="card shadow-sm border-0">
+              <a target="_blank" href="300652_0_ncocr2.webp">
+                <img src="HP_New-at-Croma_SB_4Dec2024_pxfktv.webp" class="card-img-btm " alt="Tablet" >
+              </a>
+              <!-- <div class="card-body text-center">
+                <p class="card-title fw-bold">Tablet</p>
+              </div> -->
+            </div>
+          </div>
+          <!-- Gallery Item 3 -->
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="card shadow-sm border-0">
+              <a target="_blank" href="croma-32-inch-hd-led-smart-tv.jpg">
+                <img src="HP_New-at-Croma_Vivo_4Dec2024_tjzyi0.webp" class="card-img-btm " alt="Electronics" >
+              </a>
+              <!-- <div class="card-body text-center">
+                <p class="card-title fw-bold">Electronics</p>
+              </div> -->
+            </div>
+          </div>
+          <!-- Gallery Item 4 -->
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="card shadow-sm border-0">
+              <a target="_blank" href="71zmAid9qYL._AC_UF1000,1000_QL80_.jpg">
+                <img src="HP_New-at-Croma_Geysers_4Dec2024_fltsdq.webp" class="card-img-btm " alt="AC" >
+              </a>
+              <!-- <div class="card-body text-center">
+                <p class="card-title fw-bold">AC</p>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      
 
-<div><h2>No More Worrying About Your Appliances</h2></div>
+
+<div class="text-center mb-4">
+  <h2>No More Worrying About Your Appliances</h2>
+</div>
 
 <div><img src="Zip-Care_ny0dbz.webp" width="100%" height="200px"></div>
 

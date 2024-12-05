@@ -128,12 +128,29 @@
     border-radius: 10px;
   }
 
+  /* ############## home3 ############3 */
+
+  #home3{
+    width:100% ;
+    height:200px;
+    /* margin: 50px; */
+    border-radius: 10px;
+  }
+
+  .card-img-botm{
+    border-radius: 5px;
+  }
+
+  #home4{
+    margin-top: 20px;
+    width: 100%;
+  }
 /* ################# footer ################# */
 
 .footer-container {
         background-color: #ffffff; /* White background */
         color: #343a40; /* Dark text color for better contrast */
-        padding: 30px 0;
+        padding: 30px 0; 
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -212,6 +229,10 @@
     #home2{
       height: 200px;
     }
+    #home3{
+      height:70px;
+    }
+    
 }   
 
 @media only screen and (max-width: 992px) {
@@ -540,9 +561,25 @@
   <h2>No More Worrying About Your Appliances</h2>
 </div>
 
-<div><img src="Zip-Care_ny0dbz.webp" width="100%" height="200px"></div>
+<div style="padding: 50px;"><img id="home3" src="HP_Neubanner_18April24.png_h4axzq.webp" ></div>
 
-
+<div class="container mt-4">
+  <div class="row">
+    <!-- First Card -->
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="card">
+        <img src="1Gift_dflts4.webp" class="card-img-botm" alt="Image 1">
+      </div>
+    </div>
+    <!-- Second Card -->
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="card">
+        <img src="Indulge_rve6v9.webp" class="card-img-botm" alt="Image 2">
+      </div>
+    </div>
+  </div>
+</div>
+<div ><img id="home4" src="Why-Croma_t2lgxr.webp" ></div>
      <!-- <div class="row g-0">
       <div class="col-md-0 col-lg-4"></div>
       <div class="col-md-12 col-lg-4 product-column">
@@ -602,7 +639,7 @@
 
                 <div class="container-fluid footer-container">
                   <div class="footer-section">
-                      <img class="footer-logo" src="logo.png" alt="Footer Logo">
+                      <img class="footer-logo" src="logo.png" alt="Footer Logo" style="height: 50px; width: 100px;">
                       <b>Solutions</b>
                       <a href="#">My Account</a>
                       <a href="#">Track Your Order</a>
